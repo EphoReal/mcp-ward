@@ -1,0 +1,67 @@
+{
+  "counts": {
+    "additive": 1,
+    "breaking": 2,
+    "cosmetic": 0,
+    "review": 1,
+    "unknown": 0
+  },
+  "exit_code": 1,
+  "findings": [
+    {
+      "after": {
+        "readOnlyHint": false
+      },
+      "axis": "agent",
+      "before": {
+        "readOnlyHint": true
+      },
+      "code": "agent.annotations.changed",
+      "impact": "review",
+      "message": "tool annotations changed; trust and side-effect hints may change",
+      "path": "tools.search_notes.annotations"
+    },
+    {
+      "after": {
+        "maximum": 100,
+        "minimum": 1,
+        "type": "string"
+      },
+      "axis": "wire",
+      "before": null,
+      "code": "schema.required.added",
+      "impact": "breaking",
+      "message": "field 'limit' became required",
+      "path": "tools.search_notes.inputSchema.limit"
+    },
+    {
+      "after": [
+        "string"
+      ],
+      "axis": "wire",
+      "before": [
+        "integer"
+      ],
+      "code": "schema.type.accepted.narrowed",
+      "impact": "breaking",
+      "message": "accepted types narrowed: ['integer'] removed",
+      "path": "tools.search_notes.inputSchema.limit.type"
+    },
+    {
+      "after": [
+        "string"
+      ],
+      "axis": "wire",
+      "before": [
+        "integer"
+      ],
+      "code": "schema.type.accepted.widened",
+      "impact": "additive",
+      "message": "accepted/produced types changed: ['string'] added",
+      "path": "tools.search_notes.inputSchema.limit.type"
+    }
+  ],
+  "format_version": 1,
+  "max_severity": "breaking",
+  "profile": "agent"
+}

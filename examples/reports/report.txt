@@ -1,0 +1,22 @@
+mcp-ward · BREAKING · profile: agent · BLOCK
+2 breaking  1 review  1 additive  0 cosmetic  0 unknown
+
+REVIEW    tools.search_notes.annotations
+          tool annotations changed; trust and side-effect hints may change [agent · agent.annotations.changed]
+          − {"readOnlyHint":true}
+          + {"readOnlyHint":false}
+
+BREAKING  tools.search_notes.inputSchema.limit
+          field 'limit' became required [wire · schema.required.added]
+          − ∅
+          + {"maximum":100,"minimum":1,"type":"string"}
+
+BREAKING  tools.search_notes.inputSchema.limit.type
+          accepted types narrowed: ['integer'] removed [wire · schema.type.accepted.narrowed]
+          − ["integer"]
+          + ["string"]
+
+ADDITIVE  tools.search_notes.inputSchema.limit.type
+          accepted/produced types changed: ['string'] added [wire · schema.type.accepted.widened]
+          − ["integer"]
+          + ["string"]

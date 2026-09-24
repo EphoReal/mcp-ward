@@ -1,0 +1,39 @@
+{
+  "name": "Example MCP surface",
+  "tools": [
+    {
+      "name": "search_notes",
+      "title": "Search notes",
+      "description": "Search notes by exact phrase.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        },
+        "required": ["query"],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "hits": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        },
+        "required": ["hits"]
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+.pip-cache/
+.env
+.env.*
+dist/
+build/
+*.egg-info/
+/reports/
+/mcp-ward.snapshot.json
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db

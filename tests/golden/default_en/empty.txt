@@ -1,0 +1,4 @@
+mcp-ward · CLEAN · profile: observe · PASS
+0 breaking  0 review  0 additive  0 cosmetic  0 unknown
+
+No contract changes detected.
