@@ -89,17 +89,6 @@ Compare against a committed baseline without copying it out of git:
 mcp-ward check --baseline-ref main:baseline.json --candidate tools-list.json --profile agent
 ```
 
-###  🌍 Bilingual Output
-
-```bash
-mcp-ward check baseline.json candidate.json \
-  --lang both --format text,json,html --report-dir reports/
-```
-
-`en` (default) · `zh` · `both`. Only mcp-ward's own wording is translated — tool names, parameter names, descriptions, paths, and user input pass through untouched, and an unrecognised finding code falls back to its original English message.
-
-**JSON stays language-neutral.** The same three language modes produce byte-identical JSON, so CI and agent consumers keep stable machine keys.
-
 ###  🧩 Python API
 
 ```python
@@ -214,19 +203,6 @@ mcp-ward check baseline.json candidate.json \
 ```bash
 mcp-ward check --baseline-ref main:baseline.json --candidate tools-list.json --profile agent
 ```
-
-###  🌍 双语报告
-
-```bash
-mcp-ward check baseline.json candidate.json \
-  --lang both --format text,json,html --report-dir reports/
-```
-
-`en`（默认）· `zh` · `both`。只翻译 mcp-ward 自己的措辞——工具名、参数名、描述、
-路径和用户输入原样透传；无法识别的 finding code 会回退到原始英文消息。
-
-**JSON 保持语言中立。** 同样的三种语言模式产出逐字节相同的 JSON，所以 CI 和
-Agent 消费方拿到的机器字段始终稳定。
 
 ###  🧩 Python API
 
