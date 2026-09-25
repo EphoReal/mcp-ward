@@ -113,17 +113,6 @@ for finding in report.findings:
     print(f"[{finding.impact}] {finding.path}: {finding.message}")
 ```
 
-###  📖 Documentation
-
-| | | |
-|:---:|:---:|:---:|
-| 📐 [Architecture](docs/architecture.en.md) | 🤝 [Product contract](docs/product-contract.en.md) | 🗺️ [Roadmap](docs/roadmap.en.md) |
-| Boundaries, snapshot contract, rendering rules | The v0.1 promise and non-goals | What is deliberately deferred |
-
-###  🚫 Not In This Release
-
-Live protocol capture · full JSON Schema validation · output conformance testing · LLM behaviour evaluation · automatic baseline promotion.
-
 ###  📄 License
 
 ```
@@ -252,17 +241,6 @@ for finding in report.findings:
     print(f"[{finding.impact}] {finding.path}: {finding.message}")
 ```
 
-###  📖 文档
-
-| | | |
-|:---:|:---:|:---:|
-| 📐 [架构](docs/architecture.md) | 🤝 [产品契约](docs/product-contract.md) | 🗺️ [路线图](docs/roadmap.md) |
-| 边界、快照契约、渲染规则 | v0.1 的承诺与不做的事 | 刻意推迟的东西 |
-
-###  🚫 首个版本不做
-
-实时协议抓包 · 完整的 JSON Schema 校验 · 输出符合性测试 · LLM 行为评估 · 自动
-更新 baseline。
 
 ###  📄 许可
 
